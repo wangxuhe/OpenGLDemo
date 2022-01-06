@@ -1,1 +1,1 @@
-# OpenGLDemo
+# openGLDemo
