@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9927C9832788466B00B7376F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927C9822788466B00B7376F /* main.cpp */; };
+		9927C98B278846C600B7376F /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 9927C98A278846C600B7376F /* glad.c */; };
+		9927C98C278846D900B7376F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FC37062786D2B6001211CF /* OpenGL.framework */; };
+		9927C98D278846E600B7376F /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FC371E2786EA5F001211CF /* libglfw.3.3.dylib */; };
 		99FC36F62786C4C0001211CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99FC36F52786C4C0001211CF /* main.cpp */; };
 		99FC37012786CDE9001211CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99FC37002786CDE9001211CF /* main.cpp */; };
 		99FC37072786D2B6001211CF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FC37062786D2B6001211CF /* OpenGL.framework */; };
@@ -25,6 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9927C97E2788466B00B7376F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		99FC36F12786C4C0001211CF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9927C9802788466B00B7376F /* FirstWindow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstWindow; sourceTree = BUILT_PRODUCTS_DIR; };
+		9927C9822788466B00B7376F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9927C98A278846C600B7376F /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = GLSL/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
 		99FC36F32786C4C0001211CF /* Triangle_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Triangle_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FC36F52786C4C0001211CF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		99FC36FE2786CDE9001211CF /* TriangleShader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TriangleShader; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +88,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9927C97D2788466B00B7376F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9927C98D278846E600B7376F /* libglfw.3.3.dylib in Frameworks */,
+				9927C98C278846D900B7376F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99FC36F02786C4C0001211CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,9 +132,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9927C9812788466B00B7376F /* FirstWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9927C98A278846C600B7376F /* glad.c */,
+				9927C9822788466B00B7376F /* main.cpp */,
+			);
+			path = FirstWindow;
+			sourceTree = "<group>";
+		};
 		99FC36DC2786C42F001211CF = {
 			isa = PBXGroup;
 			children = (
+				9927C9812788466B00B7376F /* FirstWindow */,
 				99FC37132786E55E001211CF /* Triangle */,
 				99FC36F42786C4C0001211CF /* Triangle_1 */,
 				99FC36FF2786CDE9001211CF /* TriangleShader */,
@@ -124,6 +159,7 @@
 				99FC36F32786C4C0001211CF /* Triangle_1 */,
 				99FC36FE2786CDE9001211CF /* TriangleShader */,
 				99FC37122786E55E001211CF /* Triangle */,
+				9927C9802788466B00B7376F /* FirstWindow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +206,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9927C97F2788466B00B7376F /* FirstWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9927C9862788466B00B7376F /* Build configuration list for PBXNativeTarget "FirstWindow" */;
+			buildPhases = (
+				9927C97C2788466B00B7376F /* Sources */,
+				9927C97D2788466B00B7376F /* Frameworks */,
+				9927C97E2788466B00B7376F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstWindow;
+			productName = FirstWindow;
+			productReference = 9927C9802788466B00B7376F /* FirstWindow */;
+			productType = "com.apple.product-type.tool";
+		};
 		99FC36F22786C4C0001211CF /* Triangle_1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99FC36F72786C4C0001211CF /* Build configuration list for PBXNativeTarget "Triangle_1" */;
@@ -229,6 +282,9 @@
 			attributes = {
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
+					9927C97F2788466B00B7376F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					99FC36F22786C4C0001211CF = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -253,6 +309,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				9927C97F2788466B00B7376F /* FirstWindow */,
 				99FC37112786E55E001211CF /* Triangle */,
 				99FC36F22786C4C0001211CF /* Triangle_1 */,
 				99FC36FD2786CDE9001211CF /* TriangleShader */,
@@ -261,6 +318,15 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9927C97C2788466B00B7376F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9927C9832788466B00B7376F /* main.cpp in Sources */,
+				9927C98B278846C600B7376F /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99FC36EF2786C4C0001211CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +355,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9927C9842788466B00B7376F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/GLSL/glad/include",
+					"$(PROJECT_DIR)/GLSL/glfw/3.3.4/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLSL/glfw/3.3.4/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9927C9852788466B00B7376F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/GLSL/glad/include",
+					"$(PROJECT_DIR)/GLSL/glfw/3.3.4/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLSL/glfw/3.3.4/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		99FC36EA2786C42F001211CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -495,6 +593,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9927C9862788466B00B7376F /* Build configuration list for PBXNativeTarget "FirstWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9927C9842788466B00B7376F /* Debug */,
+				9927C9852788466B00B7376F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		99FC36E02786C42F001211CF /* Build configuration list for PBXProject "OpenGLDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
