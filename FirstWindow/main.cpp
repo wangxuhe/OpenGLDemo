@@ -71,6 +71,10 @@ int main(int argc, const char * argv[]) {
     {
         // 检测输入按键相关
         ProcessInput(window);
+        
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        
         /*
          屏幕是按照从左到右，由上而下的逐像素绘制而成的。
          最终的图像不是瞬间显示给用户， 而是一步步的生成的。
