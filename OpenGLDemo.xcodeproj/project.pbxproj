@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9911063D278C30B300BAAF11 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9911063C278C30B200BAAF11 /* stb_image.cpp */; };
 		99C0E1C0278AD73300AFFEB8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99C0E1BF278AD73300AFFEB8 /* main.cpp */; };
 		99C0E1C4278AD76000AFFEB8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FC37062786D2B6001211CF /* OpenGL.framework */; };
 		99C0E1C5278AD76B00AFFEB8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 998410D52789ED1C0023FD6F /* libglfw.3.3.dylib */; };
@@ -78,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		99110638278C1CD000BAAF11 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader.h; path = includes/learnopengl/shader.h; sourceTree = SOURCE_ROOT; };
+		9911063C278C30B200BAAF11 /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stb_image.cpp; path = src/stb_image.cpp; sourceTree = "<group>"; };
 		99840C1C2789C7480023FD6F /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		998410BD2789EA5F0023FD6F /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = src/glad.c; sourceTree = SOURCE_ROOT; };
 		998410D52789ED1C0023FD6F /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = libs/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		998410BA2789E9FD0023FD6F /* GLAD */ = {
 			isa = PBXGroup;
 			children = (
+				99110638278C1CD000BAAF11 /* shader.h */,
 				998410BD2789EA5F0023FD6F /* glad.c */,
 			);
 			path = GLAD;
@@ -211,6 +215,7 @@
 		99FC36DC2786C42F001211CF = {
 			isa = PBXGroup;
 			children = (
+				9911063C278C30B200BAAF11 /* stb_image.cpp */,
 				99C0E19A278ABA5900AFFEB8 /* 1.Basic */,
 				998410BA2789E9FD0023FD6F /* GLAD */,
 				99FC36E62786C42F001211CF /* Products */,
@@ -411,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9911063D278C30B300BAAF11 /* stb_image.cpp in Sources */,
 				99C0E1EE278AD8D500AFFEB8 /* glad.c in Sources */,
 				99C0E1EA278AD8C800AFFEB8 /* main.cpp in Sources */,
 			);

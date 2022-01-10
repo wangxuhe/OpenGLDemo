@@ -2,8 +2,15 @@
 out vec4 FragColor;
 
 in vec3 ourColor;
+in vec2 TexCoord;
+
+uniform sampler2D ourTexture;
 
 void main()
 {
-    FragColor = vec4(ourColor, 1.0f);
+    // texurre 用于采样纹理的颜色(纹理采样器， 纹理坐标)
+    //FragColor = texture(ourTexture, TexCoord);
+    
+    // 纹理变色
+    FragColor = texture(ourTexture, TexCoord) * vec4(ourColor, 1.0);
 }
