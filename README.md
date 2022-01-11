@@ -65,3 +65,10 @@ xcrun --sdk iphoneos --show-sdk-path
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk
 ```
 
+
+
+
+
+按照包记录：
+
+glm version: 0.9.9.8, 下载地址：https://github.com/g-truc/glm/tags
