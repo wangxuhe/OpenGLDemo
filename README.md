@@ -65,6 +65,11 @@ xcrun --sdk iphoneos --show-sdk-path
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk
 ```
 
+5. 在其他机器上下载运行项目的时候，发现会直接崩溃： 
+  原因在于： **对应的libGLEW2.2.0.dylib未找到， 且项目中未安装glew, glfw相关**
+  解决方法： **终端命令运行： brew install glew glfw**
+  再次运行项目
+
 
 
 
